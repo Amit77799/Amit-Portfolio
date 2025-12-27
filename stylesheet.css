@@ -161,9 +161,11 @@ body
 }
 .about-text h2{
     font-size: 60px;
+    margin-top: 40px;
 }
 .about-text h2 span{
     color: #0ef;
+    
 }
 .about-text h4{
     font-size: 29px;
@@ -810,4 +812,83 @@ body
 }
 .project-title{
     margin-bottom: 50px;
+}
+
+/* Wrapper */
+.profile-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.profile-container {
+  width: 35vw;
+  max-width: 300px;
+  min-width: 140px;
+  aspect-ratio: 1 / 1;
+  height: 300px;
+}
+
+/* Neon Ring */
+.neon-ring {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 5%;
+  background: linear-gradient(
+    270deg,
+    #00fff0,
+    #7f00ff,
+    #ff0080,
+    #00fff0
+  );
+  background-size: 600% 600%;
+  animation: neonRotate 6s linear infinite;
+  box-shadow:
+    0 0 15px #00fff0,
+    0 0 30px #7f00ff,
+    0 0 60px #ff0080;
+}
+
+/* Image */
+.neon-ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0e0e1a;
+}
+
+/* Animation */
+@keyframes neonRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* 🔹 Mobile Optimization */
+@media (max-width: 480px) {
+  .profile-container {
+    width: 55vw;
+    min-width: 120px;
+  }
+}
+
+/* 🔹 Tablet */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 45vw;
+  }
+}
+
+.hero{
+    height: 400px;
+    width: 400px;
+}
+.Amit{
+    margin-left: 300px;
 }
